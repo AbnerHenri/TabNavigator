@@ -1,12 +1,13 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-function HomeScreen() {
+
+function Todo() {
   return(
     <View>
-        <Text>Home</Text>
+        <Text>About</Text>
     </View>
   );
 }
 
-export default HomeScreen;
+export default Todo;

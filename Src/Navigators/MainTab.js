@@ -1,15 +1,18 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 
-import HomeScreen from "../Pages/HomeScreen";
-import AboutScreen from "../Pages/AboutScreen";
+import Done from "../Pages/Done";
+import Todo from "../Pages/Todo";
+import Today from '../Pages/Today';
+import TabBar from '../Components/TabBar'
 
 const Tab = createBottomTabNavigator();
 
 export default () => {
     return (
-    <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="About" component={AboutScreen} />
+    <Tab.Navigator tabBar={(props) => <TabBar {...props} />}>
+        <Tab.Screen name="Done" component={Done} />
+        <Tab.Screen name="Today" component={Today} />
+        <Tab.Screen name="ToDo" component={Todo} />
     </Tab.Navigator> 
     )
 }

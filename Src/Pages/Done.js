@@ -1,13 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-
-function AboutScreen() {
+function Done() {
   return(
     <View>
-        <Text>About</Text>
+        <Text>Home</Text>
     </View>
   );
 }
 
-export default AboutScreen;
+export default Done;
