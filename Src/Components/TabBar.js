@@ -46,7 +46,7 @@ function TabBar({ state, navigation }) {
               >
                 <>
                   <Image source={SourceImage(route.name)} style={{ width: 30, height: 30 }} />
-                  <Text>{label}</Text>
+                  <Text style={Styles.Label}>{label}</Text>
                 </>
               </TouchableOpacity>
             )
@@ -61,6 +61,7 @@ const Styles = StyleSheet.create({
     flexDirection : 'row',
 
     height : 55,
+    backgroundColor : '#DDD'
   },
   TabToday : {
     flex: 1,
@@ -85,6 +86,10 @@ const Styles = StyleSheet.create({
     
     justifyContent : 'center',
     alignItems : 'center',
+  },
+
+  Label : {
+    fontSize : 12
   }
 })
 
